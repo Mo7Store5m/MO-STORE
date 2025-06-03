@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mo Store</title>
+  <!-- خط جميل -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0d1b2a; /* كحلي */
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
+      background-color: #001f3f; /* كحلي */
+      font-family: 'Cairo', sans-serif;
+      color: #ffffff;
       text-align: center;
-      padding: 30px;
+      padding: 20px;
     }
-
-    .product-container {
+    h1 {
+      color: #ffffff;
+    }
+    .description {
+      font-size: 1.2em;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    .logo {
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+    .products {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
+      gap: 20px;
     }
-
     .product {
-      background-color: #8B0000; /* أحمر غامج */
-      color: white;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 15px;
-      width: 250px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      text-align: center;
-    }
-
-    .product h2 {
-      margin: 0 0 10px 0;
-      font-size: 20px;
-    }
-
-    .product p {
-      font-size: 18px;
-      margin: 0;
-    }
-
-    .contact-box {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #8B0000;
+      background-color: #8B0000; /* أحمر غامق */
       padding: 15px;
+      width: 45%;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 2px solid #5a0000;
+      box-sizing: border-box;
+      color: #ffffff;
     }
-
-    .contact-box p {
-      margin: 5px 0;
-      font-size: 14px;
+    .product-name {
+      font-size: 1.1em;
+      font-weight: bold;
     }
-
-    @media (max-width: 600px) {
-      .product {
-        width: 90%;
-      }
+    .price {
+      display: block;
+      margin-top: 8px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .discord-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 10px 20px;
+      background-color: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Mo Store</h1>
-    <p>متجر متخصص في تصاميم فايف إم والديسكورد</p>
-  </header>
+  <img src="logo.png" alt="Mo Store Logo" class="logo" />
 
-  <div class="product-container">
-    <div class="product"><h2>بكج Super vip 👑</h2><p>$250</p></div>
-    <div class="product"><h2>بكج Super 💎</h2><p>$175</p></div>
-    <div class="product"><h2>بكج Animation ✨</h2><p>$125</p></div>
-    <div class="product"><h2>بكج Normal 🎈</h2><p>$80</p></div>
-    <div class="product"><h2>بكج Cfw 🎭</h2><p>$45</p></div>
-    <div class="product"><h2>بكج Discord 🎄</h2><p>$30</p></div>
-    <div class="product"><h2>Loading Screen 🎥</h2><p>$20</p></div>
-    <div class="product"><h2>لوحات متحركة 🎨</h2><p>غير متوفر</p></div>
-    <div class="product"><h2>لوحات آخر إصدار 🎏</h2><p>$15</p></div>
-    <div class="product"><h2>بنك آخر إصدار 🎢</h2><p>$15</p></div>
-    <div class="product"><h2>ثري دي لوقو آخر إصدار 🧸</h2><p>$15</p></div>
-    <div class="product"><h2>خريطة آخر إصدار 👔</h2><p>$15</p></div>
-    <div class="product"><h2>ماب شبمنت 🏠</h2><p>$10</p></div>
-    <div class="product"><h2>بيبي سكن 👶</h2><p>$10</p></div>
+  <h1>Mo Store</h1>
+  <p class="description">متجر متخصص في تصاميم فايف إم والديسكورد</p>
+
+  <div class="products">
+    <div class="product"><span class="product-name">بكج Super VIP</span><span class="price">250$</span></div>
+    <div class="product"><span class="product-name">بكج Super</span><span class="price">175$</span></div>
+    <div class="product"><span class="product-name">بكج Animation</span><span class="price">125$</span></div>
+    <div class="product"><span class="product-name">بكج Normal</span><span class="price">80$</span></div>
+    <div class="product"><span class="product-name">بكج CFW</span><span class="price">45$</span></div>
+    <div class="product"><span class="product-name">بكج Discord</span><span class="price">30$</span></div>
+    <div class="product"><span class="product-name">Loading Screen</span><span class="price">20$</span></div>
+    <div class="product"><span class="product-name">لوحات متحركة</span><span class="price">:x: غير متوفر</span></div>
+    <div class="product"><span class="product-name">لوحات آخر إصدار</span><span class="price">15$</span></div>
+    <div class="product"><span class="product-name">بنك آخر إصدار</span><span class="price">15$</span></div>
+    <div class="product"><span class="product-name">ثري دي لوقو آخر إصدار</span><span class="price">15$</span></div>
+    <div class="product"><span class="product-name">خريطة آخر إصدار</span><span class="price">15$</span></div>
+    <div class="product"><span class="product-name">ماب Shipment</span><span class="price">10$</span></div>
+    <div class="product"><span class="product-name">بيبي سكن</span><span class="price">10$</span></div>
   </div>
 
+  <a class="discord-link" href="https://discord.com/users/mo7" target="_blank">اطلب عن طريق Discord</a>
+
   <div class="contact-box">
-    <p>📱 واتساب: <a href="https://wa.me/96565798061" target="_blank" style="color: white; text-decoration: underline;">65798061</a></p>
-    <p>🎮 ديسكورد: .43o / 11leo</p>
+    <p>:mobile_phone: واتساب: <a href="https://wa.me/96565798061" target="_blank" style="color: white; text-decoration: underline;">65798061</a></p>
+    <p>:video_game: ديسكورد: .43o / 11leo</p>
   </div>
 
 </body>
